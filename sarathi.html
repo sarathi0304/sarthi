@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your name - profile</title>
+<style>
+body{
+font-family: Arial,sans-serif;
+margin: 0;
+padding: 0;
+background-color: #acd78d;
+}
+header{
+background-color: #020101;
+color: #fff;
+text-align: center;
+padding: 2rem 0;
+position: relative;
+text-decoration: none;
+}
+.header-content h1{
+font-size: 2.5rem;
+}
+.profile-picture{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+object-fit: cover;
+position:initial;
+top: 75px;
+left: 75px;
+}
+nav{
+background-color:#c4f6f4;
+color: black;
+text-align: center;
+}
+nav ul{
+list-style: none;
+padding: 0;
+position:relative;
+}
+nav ul li{
+display: inline;
+margin:0 10px ;
+}
+nav ul li a{
+text-decoration: none;
+color: #000000;
+} 
+.section-content{
+background-color: #f3f3f3;
+padding: 2rem;
+margin: 1rem;
+border-radius: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+ .section-content h2{
+ text-decoration: none;
+ color: black;
+ text-underline:none;
+ font-size: 40px;
+ }
+ .section-content ul li a{
+ text-decoration: none;
+ text-underline:none;
+ color: black;
+ }
+.download-button{
+background-color: #333;
+color: #fff;
+padding:10px 10px;
+text-decoration: none;
+font-size: 30px;
+border-radius:15px;
+display: inline-block;
+margin-top: 10px;
+}
+.download-button:hover{
+background-color: #4ad3fd;
+}
+footer{
+text-align: center;
+padding: 1rem 0;
+background-color: #535;
+color: #fff;
+}
+ul{
+list-style: disc;
+padding-left: 20px;
+text-decoration: none;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="header-content">
+<img src="https://raw.githubusercontent.com/Marimuthukj/digitalportfolio/main/Snapchat1789842189.jpg"alt="your profile picture" class="profile-picture">
+</img>
+<h1>SARATHI P</h1>
+<p>Computer science student</p>
+</div>
+</header>
+<nav>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#resume">Resume</a></li>
+</ul>
+</nav>
+<section id="about">
+<div class="section-content">
+<h2>About Me</h2>
+<p>HI I AM SARATHI & I AM A COMPUTER SCIENCE STUDENT.</p>
+</div>
+</section>
+<section id="education">
+<div class="section-content">
+<h2>B.sc(cs-III)</h2>
+<p>Government arts and science college-SNKL</p>
+</div>
+</section>
+<section id="skills">
+<div class="section-content">
+<h2>Skills</h2>
+<ul>
+<li>Python</li>
+<li>Java</li>
+<li>C++</li>
+<li>Html</li>
+</ul>
+</div>
+</section>
+<section id="projects">
+<div class="section-content">
+<h2>Projects</h2>
+<ul>
+<li><a href="#">Projects 1</a></li>
+<li><a href="#">Projects 2</a></li>
+</ul>
+</div>
+</section>
+<section id="resume">
+<center>
+<div class="section-content">
+<h2>Resume</h2>
+<a
+href="https://drive.google.com/file/d/1Bjt8THMojpGwZaRjJiwa7IQZUivIuLaO/view?usp=sharing"class="downloadbutton">Download</a>
+</div>
+</center>
+</section>
+<footer>
+<p>&copy;2023 SARATHI P</p>
+</footer>
+<script>
+document.qureySelectorAll('a[href^="#"]').forEach(anchor => {anchor.addEventListener('click',function(e){
+e.preventDefault();
+const targetId =this.getAtribute('href').substring(1);
+const targetElement = document.getElementById(targetId);
+if(targetElement){
+window.scrollTo({
+top: targetElement.offsetTop,
+behavior:'smooth'
+});
+}
+})})
+</script>
+</body>
+</html>
